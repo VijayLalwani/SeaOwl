@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/vijay/Pictures/Wallpapers/4.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#11181b",
+        "foreground": "#e2e3e8",
+        "cursor": "#e2e3e8"
+    },
+    "colors": {
+        "color0": "#11181b",
+        "color1": "#9F9FA6",
+        "color2": "#9CA3A8",
+        "color3": "#A4A8AF",
+        "color4": "#B6BBC3",
+        "color5": "#BDC3CB",
+        "color6": "#CBCFD7",
+        "color7": "#e2e3e8",
+        "color8": "#9e9ea2",
+        "color9": "#9F9FA6",
+        "color10": "#9CA3A8",
+        "color11": "#A4A8AF",
+        "color12": "#B6BBC3",
+        "color13": "#BDC3CB",
+        "color14": "#CBCFD7",
+        "color15": "#e2e3e8"
+    }
+}

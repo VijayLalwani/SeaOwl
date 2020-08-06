@@ -1,0 +1,240 @@
+[colors]
+background        = #e0020202
+foreground        = #ffffff
+
+[constants]
+padding = 1
+
+[bar/right]
+background            = #e0020202
+border-color          = ${colors.foreground}
+border-size           = 0
+border-transparent    = true
+bottom                = false
+cursor-click          = pointer
+cursor-scroll         = ns-resize
+fixed-center          = true
+foreground            = ${colors.foreground}
+height                = 30
+line-color            = #f00
+line-size             = 0
+module-margin-left    = 0
+module-margin-right   = 0
+monitor               = eDP-1
+monitor-fallback      = eDP-1
+offset-x              = 90%:-30
+offset-y              = 15
+override-redirect     = true
+padding-left          = 0
+padding-right         = 0
+radius                = 0
+scroll-down           = i3wm-wsprev
+scroll-up             = i3wm-wsnext
+tray-position         = none
+width                 = 11%
+
+modules-center         = pulseaudio wlan battery  
+modules-right          = date
+
+font-0 = mononoki Nerd Font:weight=bold:fontformat=truetype:size=16:antialias=true;4
+font-1 = Noto Sans:fontformat=truetype:size=14:antialias=true;4
+
+[bar/middle]
+inherit = bar/right
+
+offset-x              = 40%
+offset-y              = 15
+width                 = 20%
+background            = #e0020202
+modules-left        = 
+modules-center        = i3
+modules-right        = 
+;    _          _   _                
+;   | |__  __ _| |_| |_ ___ _ _ _  _ 
+;   | '_ \/ _` |  _|  _/ -_) '_| || |
+;   |_.__/\__,_|\__|\__\___|_|  \_, |
+;                               |__/ 
+
+[module/battery]
+adapter                                 = ADP1
+battery                                 = BAT0
+
+format-charging                         = <label-charging>
+format-charging-foreground              = #ffffff
+
+format-discharging                      = <ramp-capacity><label-discharging>
+format-discharging-foreground           = #ffffff
+
+format-full-foreground                  = #ffffff
+
+
+
+full-at                                 = 99
+
+label-charging                          = 
+format-charging-padding                 = ${constants.padding}
+
+label-discharging                       = 
+format-discharging-padding              = ${constants.padding}
+
+label-full                              = 
+format-full-padding                     = ${constants.padding}
+
+poll-interval                           = 5
+
+type                                    = internal/battery
+
+ramp-capacity-0                         = 
+ramp-capacity-1                         = 
+ramp-capacity-2                         = 
+ramp-capacity-3                         = 
+ramp-capacity-4                         = 
+ramp-capacity-5                         = 
+ramp-capacity-6                         = 
+ramp-capacity-7                         = 
+ramp-capacity-8                         = 
+ramp-capacity-9                         = 
+
+;     _      _       
+;  __| |__ _| |_ ___ 
+; / _` / _` |  _/ -_)
+; \__,_\__,_|\__\___|
+                    
+[module/date]
+date                        = %D
+
+format                      = <label>
+interval                    = 1.0
+
+label                       = %{A6:time-admin:}%time%   %{A}
+format-background           = #e0020202
+format-foreground           = #77B9C4
+
+time                        = %I:%M
+time-alt                    = %A, %B %e  %I:%M:%S %p
+
+type                        = internal/date
+
+
+;  _ ____             
+; (_)__ /_ __ ___ __  
+; | ||_ \ V  V / '  \ 
+; |_|___/\_/\_/|_|_|_|
+                     
+[module/i3]
+format                      = <label-state> <label-mode>
+index-sort                  = true
+pin-workspaces              = false
+type                        = internal/i3
+wrapping-scroll             = false
+
+label-focused-font = 1
+label-unfocused-font = 1
+label-urgent-font = 1
+label-mode-font = 2
+
+label-mode                  = 煉 %mode%
+label-mode-background       = #ff0000
+label-mode-foreground       = #ffffff
+label-mode-padding          = 1
+
+label-focused               = 
+label-focused-background    = ${colors.background}
+label-focused-foreground    = #77B9C4
+label-focused-padding       = 1
+
+label-unfocused             = 
+label-unfocused-background  = ${colors.background}
+label-unfocused-foreground  = #ffffff
+label-unfocused-padding     = 1
+
+label-urgent                = 
+label-urgent-background     = ${colors.background}
+label-urgent-foreground     = #ff0000
+label-urgent-padding        = 1
+
+label-visible               = 
+label-visible-foreground    = #ffffff
+label-visible-padding       = 1
+
+;              _         
+;    _ __ _  _| |___ ___ 
+;   | '_ \ || | (_-</ -_)
+;   | .__/\_,_|_/__/\___|
+;   |_|                  
+
+[module/pulseaudio]
+format-muted                      = <label-muted>
+format-muted-foreground           = #ffffff
+format-muted-background-0    = #6C6AF2
+format-muted-background-1    = #4648FB
+
+format-volume                     = <ramp-volume>
+format-volume-foreground          = #ffffff
+format-volume-background-0    = #6C6AF2
+format-volume-background-1    = #4648FB
+
+interval                          = 5
+
+label-muted                       = %{A3:pavucontrol:}婢%{A}
+format-muted-padding              = ${constants.padding}
+label-volume                      = %{A3:pavucontrol:}%{A}
+format-volume-padding             = ${constants.padding}
+
+ramp-volume-0                     = %{A3:pavucontrol:}奄%{A}
+ramp-volume-1                     = %{A3:pavucontrol:}奔%{A}
+ramp-volume-2                     = %{A3:pavucontrol:}墳%{A}
+
+sink                              = alsa_output.pci-0000_00_1f.3.hdmi-stereo-extra1
+
+type                              = internal/pulseaudio
+
+use-ui-max                        = false
+
+;           _           
+;   __ __ _| |__ _ _ _  
+;   \ V  V / / _` | ' \ 
+;    \_/\_/|_\__,_|_||_|
+;                       
+
+[module/wlan]
+format-connected                      = %{A1:tilix -e wicd-curses:}直<label-connected>%{A}
+format-connected-foreground           = #ffffff
+format-connected-background-0    = #6C6AF2
+format-connected-background-1    = #4648FB
+
+format-disconnected                   = %{A1:tilix -e wicd-curses:}睊%{A}
+format-disconnected-foreground        = #ffffff
+format-disconnected-background-0    = #6C6AF2
+format-disconnected-background-1    = #4648FB
+
+interface                             = wlp3s0
+
+interval                              = 3.0
+
+label-connected                       = 
+format-connected-padding              = ${constants.padding}
+format-disconnected-padding           = ${constants.padding}
+
+
+type                                  = internal/network
+
+;          _   _   _              
+;  ___ ___| |_| |_(_)_ _  __ _ ___
+; (_-</ -_)  _|  _| | ' \/ _` (_-<
+; /__/\___|\__|\__|_|_||_\__, /__/
+;                        |___/    
+                                      
+[settings]
+;compositing-background = screen
+;compositing-background = xor
+;compositing-border     = over
+;pseudo-transparency    = true
+compositing-foreground  = source
+screenchange-reload     = true
+
+[global/wm]
+
+; vim:ft        = dosini
+  margin-bottom = 940
+  margin-top    = 940

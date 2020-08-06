@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/vijay/Pictures/Wallpapers/6.png"
+let background = "#020202"
+let foreground = "#cbdfdf"
+let cursor     = "#cbdfdf"
+
+" Colors
+let color0  = "#020202"
+let color1  = "#77B9C4"
+let color2  = "#7FC0CA"
+let color3  = "#85B4B8"
+let color4  = "#94C7B7"
+let color5  = "#88BCC7"
+let color6  = "#94C6CD"
+let color7  = "#cbdfdf"
+let color8  = "#8e9c9c"
+let color9  = "#77B9C4"
+let color10 = "#7FC0CA"
+let color11 = "#85B4B8"
+let color12 = "#94C7B7"
+let color13 = "#88BCC7"
+let color14 = "#94C6CD"
+let color15 = "#cbdfdf"

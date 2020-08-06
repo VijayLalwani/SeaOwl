@@ -1,0 +1,21 @@
+set $wallpaper /home/vijay/Pictures/Wallpapers/6.png
+
+set $background #020202
+set $foreground #cbdfdf
+
+set $color0 #020202
+set $color1 #77B9C4
+set $color2 #7FC0CA
+set $color3 #85B4B8
+set $color4 #94C7B7
+set $color5 #88BCC7
+set $color6 #94C6CD
+set $color7 #cbdfdf
+set $color8 #8e9c9c
+set $color9 #77B9C4
+set $color10 #7FC0CA
+set $color11 #85B4B8
+set $color12 #94C7B7
+set $color13 #88BCC7
+set $color14 #94C6CD
+set $color15 #cbdfdf
