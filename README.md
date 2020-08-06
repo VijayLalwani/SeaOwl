@@ -1,2 +1,3 @@
 # SeaOwl
-dotfiles for my post.
+Dotfiles for my post.
+will update the readme soon!!
