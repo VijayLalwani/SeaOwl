@@ -53,7 +53,7 @@ URxvt*color15: #cbdfdf
 Xcursor.theme: Bibita
 Xcursor.size:                     0
 
-URxvt*font:                       xft:Hack Nerd Font Mono:pixelsize=12,9x15
+URxvt*font:                       xft:Hack Nerd Font Mono:pixelsize=14,9x15
 !URxvt*boldFont:                   fontname
 !URxvt*italicFont:                 fontname
 !URxvt*boldItalicFont:             fontname
